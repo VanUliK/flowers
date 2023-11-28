@@ -1,0 +1,79 @@
+@import url(https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700,700italic&subset=latin,cyrillic);
+@import url(animate.css);
+@import url(bootstrap.css);
+@import url(font-awesome.css);
+@import url(jquery.fancybox.css);
+@import url(settings.css);
+@import url(lightgallery.min.css);
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #a29b8c;
+  background-color: #f6fff0;
+  overflow-x: hidden;
+  font-family: "Cuprum", sans-serif;
+}
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+.header-wrapper {
+  /* height: 68px; */
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: #f6fff0;
+  line-height: 1.4;
+}
+
+.header-panel {
+  display: flex;
+  justify-content: space-between;
+  background: #000;
+  color: #ffffff;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  transition: all 200ms ease-out;
+}
+.relative {
+  display: flex;
+  justify-content: space-around;
+}
+.header-logo {
+  height: 80px;
+}
+.top-menu {
+  display: flex;
+  align-items: center;
+}
+.top-menu > ul {
+  display: flex;
+  list-style-type: none;
+}
+.top-menu > ul > li {
+  padding: 0 10px;
+}
+.top-menu > ul > li > a {
+  display: inline-block;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #6a9b0a;
+  transition: all 200ms ease-out;
+  border-bottom: 1px solid transparent;
+  /* text-decoration: none !important; */
+}
+li:hover > a,
+.active > a {
+  color: #fb1d32;
+  border-color: #fb1d32;
+}
+
+a {
+  color: #fb1d32;
+  text-decoration: none;
+}
