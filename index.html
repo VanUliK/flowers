@@ -50,7 +50,7 @@
         <!-- * * * * * * Top menu * * * * * * -->
         <div class="top-menu">
           <ul>
-            <li class="active"><a href="#home">Главная</a></li>
+            <li class="active-menu"><a href="#home">Главная</a></li>
             <li class=""><a href="#applicationsection">Каталог цветов</a></li>
             <li class=""><a href="#actions">Специальное предложение</a></li>
             <li class=""><a href="#reviews">Отзывы</a></li>
@@ -63,6 +63,92 @@
       </div>
     </div>
   </div>
+
+  <!-- ***************************************** -->
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext black"> Свежие цветы и услуги флориста <br>
+        с доставкой 24/7</div>
+      <img src="./images/slide2.jpg" style="width:100%">
+      <div class="text">
+        <div class="container black">
+          <div class="title text">
+
+          </div>
+          <div class="text black">
+            Сделай близкого человека счастливее с помощью <br>
+            уникальных букетов, не вянущих 2 недели
+          </div>
+          <a href="#applicationsection" class="scrollto button">Подобрать букет</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">
+        Свежие цветы и услуги флориста <br class="visible-lg">
+        с доставкой 24/7</div>
+      <img src="./images/slide1.jpg" style="width:100%">
+      <div class="text">
+        <div class="container">
+          <div class="title">
+          </div>
+          <div class="text">
+            Сделай близкого человека счастливее с помощью <br>
+            уникальных букетов, не вянущих 2 недели
+          </div>
+          <a href="#applicationsection" class="scrollto button" tabindex="0">Подобрать букет</a>
+        </div>
+      </div>
+    </div>
+
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+  </div>
+
+  <!-- <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div> -->
+
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+
+  </script>
+
+  <!-- ********************************* -->
+
+
   <!-- * * * * * * Header: end * * * * * * -->
   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum qui ex, rerum nihil beatae amet inventore quo architecto
   earum maxime possimus ab sit ad autem. Voluptatum temporibus minus similique neque recusandae laudantium,
