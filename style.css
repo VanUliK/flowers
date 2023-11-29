@@ -110,19 +110,6 @@ a {
   text-decoration: none;
 }
 
-@media (max-width: 767px) {
-  .head-panel-left,
-  .top-menu {
-    display: none;
-  }
-  .header-menu {
-    justify-content: flex-start;
-  }
-  .head-panel-burger {
-    display: contents;
-  }
-}
-
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -258,6 +245,23 @@ img {
   margin-bottom: 50px;
   font-family: "neucha";
   letter-spacing: 1px;
+}
+
+@media (max-width: 767px) {
+  .head-panel-left,
+  .top-menu {
+    display: none;
+  }
+  .header-menu {
+    justify-content: flex-start;
+  }
+  .head-panel-burger {
+    display: contents;
+  }
+  .text {
+    font-size: 14px;
+    padding: 0;
+  }
 }
 @-webkit-keyframes fade {
   from {
