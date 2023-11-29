@@ -21,7 +21,7 @@ body {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
 }
-.header-wrapper {
+.header-top {
   /* height: 68px; */
   position: sticky;
   top: 0;
@@ -35,7 +35,7 @@ body {
 .fa-phone {
   padding: 0 5px;
 }
-.header-wrapper:after {
+.header-top:after {
   background: #fb1d32;
   content: "";
   display: block;
@@ -56,7 +56,10 @@ body {
   font-size: 16px;
   transition: all 200ms ease-out;
 }
-.relative {
+.head-panel-burger {
+  display: none;
+}
+.header-menu {
   display: flex;
   justify-content: space-around;
 }
@@ -87,10 +90,22 @@ body {
 .active > a {
   color: #fb1d32;
   border-color: #fb1d32;
-  #f83448
 }
 
 a {
   color: #fb1d32;
   text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  .head-panel-left,
+  .top-menu {
+    display: none;
+  }
+  .header-menu {
+    justify-content: flex-start;
+  }
+  .head-panel-burger {
+    display: contents;
+  }
 }
