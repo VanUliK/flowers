@@ -75,6 +75,9 @@ body {
 .header-menu {
   display: flex;
   justify-content: space-around;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .header-logo {
   height: 80px;
@@ -103,6 +106,10 @@ body {
 .active-menu > a {
   color: #fb1d32;
   border-color: #fb1d32;
+}
+
+.top-menu-mobil {
+  display: none;
 }
 
 a {
@@ -135,6 +142,7 @@ img {
 /* Next & previous buttons */
 .prev,
 .next {
+  z-index: 2;
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -146,6 +154,9 @@ img {
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
+}
+.prev {
+  left: 0%;
 }
 
 /* Position the "next button" to the right */
@@ -223,12 +234,22 @@ img {
 }
 
 /* Fading animation */
+
+.one {
+  background-image: url(./images/slide1.jpg);
+  background-repeat: no-repeat;
+  background-position: -40px 0px;
+  background-size: cover;
+}
+/* .two {
+  background: url(./images/slide2.jpg);
+  height: 250px;
+} */
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
 }
+
 .title {
   font-family: "Nautilus Pompilius";
   font-size: 2em;
@@ -247,20 +268,69 @@ img {
   letter-spacing: 1px;
 }
 
+.slides-block {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  transform: translate(0%, 350%);
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -63%);
+}
+
 @media (max-width: 767px) {
   .head-panel-left,
   .top-menu {
     display: none;
   }
   .header-menu {
-    justify-content: flex-start;
+    justify-content: space-around;
   }
   .head-panel-burger {
     display: contents;
   }
   .text {
     font-size: 14px;
-    padding: 0;
+    /* padding: 0; */
+  }
+  .top-menu-mobil {
+    display: block;
+  }
+  .top-menu-mobil span {
+    display: block;
+    height: 4px;
+    border-radius: 8px;
+    margin-bottom: 4px;
+    width: 30px;
+    background: #0d0d0d;
   }
 }
 @-webkit-keyframes fade {
