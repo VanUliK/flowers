@@ -21,6 +21,9 @@
   margin: 0;
   padding: 0;
 }
+.hidden {
+  display: none;
+}
 body {
   font-size: 18px;
   line-height: 1.6;
@@ -196,10 +199,13 @@ img {
   position: absolute;
   padding: 5px 30px;
   border: 1px solid;
-  background-color: #cf636d;
+  background-color: #fb1d32;
+  background-color: #0a9b2e;
+
   border-radius: 15px;
 }
 .button:hover {
+  background-color: #0a9b2e;
   background-color: #fb1d32;
 }
 
@@ -344,7 +350,7 @@ img {
   .bottom-left {
     position: absolute;
     bottom: 8px;
-    left: 160px;
+    left: 180px;
   }
   .bottom-right {
     right: 40px;
