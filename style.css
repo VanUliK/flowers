@@ -333,6 +333,24 @@ img {
     background: #0d0d0d;
   }
 }
+@media (max-width: 485px) {
+  .numbertext {
+    font-size: 16px;
+  }
+  .centered {
+    width: 150px;
+    transform: translate(-100%, -75%);
+  }
+  .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 160px;
+  }
+  .bottom-right {
+    right: 40px;
+  }
+}
+
 @-webkit-keyframes fade {
   from {
     opacity: 0.4;
