@@ -69,66 +69,16 @@
   </div>
 
   <!-- ***************************************** -->
-  <!-- <div class="slideshow-container">
-
-    <div class="mySlides fade two">
-      <div class="numbertext black"> Свежие цветы и услуги флориста <br>
-        с доставкой 24/7</div>
-      <img src="./images/slide2.jpg" style="width:100%">
-      <div class="text">
-        <div class="container black">
-          <div class="title text">
-
-          </div>
-          <div class="text black">
-            Сделай близкого человека счастливее с помощью <br>
-            уникальных букетов, не вянущих 2 недели
-          </div>
-          <a href="#applicationsection" class="scrollto button">Подобрать букет</a>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="mySlides fade one">
-      <div class="numbertext">
-        Свежие цветы и услуги флориста <br class="visible-lg">
-        с доставкой 24/7</div>
-      <img src="./images/slide1.jpg" style="width:100%">
-      <div class="text">
-        <div class="container">
-          <div class="title">
-          </div>
-          <div class="text">
-            Сделай близкого человека счастливее с помощью <br>
-            уникальных букетов, не вянущих 2 недели
-          </div>
-          <a href="#applicationsection" class="scrollto button" tabindex="0">Подобрать букет</a>
-        </div>
-      </div>
-    </div>
-
-
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
-
-  </div> -->
-
 
   <div class="slides-block">
     <img src="./images/slide2.jpg" alt="Snow" style="width:100%;">
     <div class="center">
       <div class="bottom-left numbertext black"> Свежие цветы и услуги флориста <br>
         с доставкой 24/7</div>
-      <!-- <div class="bottom-left">Bottom Left</div> -->
-      <!-- <div class="top-left"> <a class="prev" onclick="plusSlides(-1)">❮</a> -->
     </div>
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
+    <a class="prev">❮</a>
+    <a class="next">❯</a>
 
-    <!-- <div class="top-right">Top Right</div> -->
-    <!-- <div class="bottom-right">Bottom Right</div> -->
-    <!-- <div class="centered">Centered</div> -->
     <div class="centered text black">
       Сделай близкого человека счастливее с помощью <br>
       уникальных букетов, не вянущих 2 недели
@@ -142,8 +92,8 @@
       <div class="bottom-left numbertext"> Свежие цветы и услуги флориста <br>
         с доставкой 24/7</div>
     </div>
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
+    <a class="prev">❮</a>
+    <a class="next">❯</a>
 
     <div class="centered text">
       Сделай близкого человека счастливее с помощью <br>
@@ -160,32 +110,39 @@
   </div> -->
 
   <script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
+    var prev = document.querySelectorAll('.prev');
+    var next = document.querySelectorAll('.next');
+    var sliders = document.querySelectorAll('.slides-block');
+    var slidersHide = document.querySelector('.slides-block + .hidden');
+    for (let i = 0; i < prev.length; i++) {
+      const element = prev[i];
+      element.addEventListener('click', function (e) {
+        sliders[0].classList.toggle('hidden')
+        slidersHide.classList.toggle('hidden')
+        // console.log(sliders[1]);
+      });
     }
 
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
+    for (let i = 0; i < next.length; i++) {
+      const element = next[i];
+      element.addEventListener('click', function (e) {
+        sliders[0].classList.toggle('hidden')
+        slidersHide.classList.toggle('hidden')
+      });
     }
 
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("slides-block");
-      // var dots = document.getElementsByClassName("slides-block");
-      if (n > slides.length) { slideIndex = 1 }
-      if (n < 1) { slideIndex = slides.length }
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      // for (i = 0; i < dots.length; i++) {
-      //   dots[i].className = dots[i].className.replace(" hidden", "");
-      // }
-      slides[slideIndex - 1].style.display = "block";
-      // dots[slideIndex - 1].className += " active";
-    }
+    setInterval(function () {
+      sliders[0].classList.toggle('hidden')
+      slidersHide.classList.toggle('hidden')
+      sliders[1].classList.toggle('hidden')
+      slidersHide.classList.toggle('hidden')
+    }, 5000,);
+
+
+
+    setTimeout(function (greeting) {
+      console.log(`Через секунду напечатаю «${greeting}»`)
+    }, 1000, 'Привет');
 
   </script>
 

@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.pic-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+figure {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  /*animation*/
+
+  animation: slideShow 24s linear infinite 0s;
+}
+
+.pic-1 {
+  opacity: 1;
+  background: url(./images/slide1.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.pic-2 {
+  animation-delay: 1s;
+  background: url(./images/slide2.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.pic-3 {
+  animation-delay: 12s;
+  background: url(https://img1.goodfon.ru/wallpaper/nbig/2/a3/goluboy-britanskiy-kot.jpg)
+    no-repeat center center;
+  background-size: cover;
+}
+
+.pic-4 {
+  animation-delay: 18s;
+  background: url(http://www.youloveit.ru/uploads/gallery/main/1003/youloveit_ru_aquaman_hd_wallpapers04.jpg)
+    no-repeat center center;
+  background-size: cover;
+}
+@keyframes slideShow {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  5% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
