@@ -165,7 +165,6 @@ img {
 /* Position the "next button" to the right */
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -175,16 +174,7 @@ img {
 }
 
 /* Caption text */
-/* .text {
-  font-family: "Nautilus Pompilius";
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-} */
+
 .text {
   font-family: "Nautilus Pompilius";
   color: #f2f2f2;
@@ -193,19 +183,18 @@ img {
   position: absolute;
   bottom: 8px;
   width: 70%;
-  /* text-align: center; */
 }
 .button {
   position: absolute;
   padding: 5px 30px;
   border: 1px solid;
-  background-color: #fb1d32;
+  /* background-color: #fb1d32; */
   background-color: #0a9b2e;
 
   border-radius: 15px;
 }
 .button:hover {
-  background-color: #0a9b2e;
+  /* background-color: #0a9b2e; */
   background-color: #fb1d32;
 }
 
@@ -216,7 +205,6 @@ img {
   /* line-height: 1.2; */
   margin-bottom: 15px;
   color: #f2f2f2;
-  /* font-size: 12px; */
   padding: 8px 12px;
   position: absolute;
   top: 0;
