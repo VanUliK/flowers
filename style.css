@@ -301,6 +301,13 @@ img {
 }
 
 @media (max-width: 767px) {
+  .header-panel {
+    display: block;
+  }
+  .head-panel-left {
+    display: flex;
+    justify-content: space-around;
+  }
   .head-panel-left,
   .top-menu {
     display: none;
