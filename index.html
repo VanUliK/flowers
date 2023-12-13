@@ -39,6 +39,19 @@
 
 
   <div class="header-top">
+    <nav class="header__nav">
+      <ul class="main_nav">
+        <li><a class="" href="#services">...</a></li>
+        <li><a class="" href="#our_works">...</a></li>
+        <li><a class="" href="#remote_costing">...</a></li>
+        <li><a class="" href="#contacts">...</a></li>
+        <li class=""><a href="#home">Главная</a></li>
+        <li class=""><a href="#applicationsection">Каталог цветов</a></li>
+        <li class=""><a href="#actions">Специальное предложение</a></li>
+        <li class=""><a href="#reviews">Отзывы</a></li>
+        <li class=""><a href="#contacts">Контакты</a></li>
+      </ul>
+    </nav>
     <div class="center">
       <div class="header-menu">
         <a href="https://sitestocks.ru/lp/k64255/"><img class="header-logo" src="images/logo_1.png"></a>
@@ -50,7 +63,7 @@
         <!-- * * * * * * Top menu * * * * * * -->
         <div class="top-menu">
           <ul>
-            <li class="active-menu"><a href="#home">Главная</a></li>
+            <li class=""><a href="#home">Главная</a></li>
             <li class=""><a href="#applicationsection">Каталог цветов</a></li>
             <li class=""><a href="#actions">Специальное предложение</a></li>
             <li class=""><a href="#reviews">Отзывы</a></li>
@@ -74,6 +87,9 @@
       </div>
     </div>
   </div>
+
+
+
 
   <!-- ***************************************** -->
 
@@ -106,7 +122,7 @@
       Сделай близкого человека счастливее с помощью <br>
       уникальных букетов, не вянущих 2 недели
     </div>
-    <a href="#applicationsection" class="bottom-right button">Подобрать букет</a>
+    <a href="#applicationsection" class="bottom-right button ">Подобрать букет</a>
   </div>
 
 
@@ -146,14 +162,79 @@
     }, 5000,);
 
 
+    let top_menu_mobil = document.querySelector('.top-menu-mobil'),
+      top_menu = document.querySelector('.top-menu'),
+      body = document.querySelector('body');
+    top_menu_mobil.addEventListener('click', function (e) {
+      top_menu.classList.toggle('open-menu')
+      header_nav.classList.toggle('open-menu')
+      body.classList.toggle('fixed-page')
+    });
 
-    setTimeout(function (greeting) {
-      console.log(`Через секунду напечатаю «${greeting}»`)
-    }, 1000, 'Привет');
 
   </script>
 
   <!-- ********************************* -->
+
+
+
+  <script>
+
+
+    // menu = document.querySelector('.menu-burger__header'),
+    header_nav = document.querySelector('.header__nav'),
+      menu.addEventListener('click', function (e) {
+        menu.classList.toggle('open-menu')
+        header_nav.classList.toggle('open-menu')
+        body.classList.toggle('fixed-page')
+      }); 
+  </script>
+
+  <style>
+    .header-menu {
+      width: 100%;
+      height: 80px;
+      background: #fff;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+      display: flex;
+      padding: 5px 0;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .main_nav {
+      display: none;
+    }
+
+    @media (max-width: 767px) {
+      .main_nav {
+        display: unset
+      }
+
+      .header__nav,
+      .top-menu {
+        display: block;
+        position: absolute;
+        top: 55px;
+        left: 0;
+        background: rgb(245, 246, 246);
+        box-shadow: #ccc;
+        width: 100%;
+        box-shadow: 0 4px 2px -2px rgba(36, 36, 36, 0.37);
+        transition: all 0.4s ease;
+        left: -100%;
+      }
+
+      .header__nav.open-menu {
+        left: 0;
+        height: 100vh;
+        /* position: fixed; */
+        top: 100%;
+      }
+
+
+    }
+  </style>
 
 
   <!-- * * * * * * Header: end * * * * * * -->
