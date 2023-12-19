@@ -39,8 +39,8 @@
 
 
   <div class="header-top">
-    <nav class="header__nav">
-      <ul class="main_nav">
+    <nav class="header-nav">
+      <ul class="main-nav">
         <li><a class="" href="#services">...</a></li>
         <li><a class="" href="#our_works">...</a></li>
         <li><a class="" href="#remote_costing">...</a></li>
@@ -172,17 +172,8 @@
     });
 
 
-  </script>
-
-  <!-- ********************************* -->
-
-
-
-  <script>
-
-
     // menu = document.querySelector('.menu-burger__header'),
-    header_nav = document.querySelector('.header__nav'),
+    header_nav = document.querySelector('.header-nav'),
       menu.addEventListener('click', function (e) {
         menu.classList.toggle('open-menu')
         header_nav.classList.toggle('open-menu')
@@ -190,54 +181,647 @@
       }); 
   </script>
 
-  <style>
-    .header-menu {
-      width: 100%;
-      height: 80px;
-      background: #fff;
-      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
-      display: flex;
-      padding: 5px 0;
-      align-items: center;
-      justify-content: space-between;
-    }
+  <div class="catalog ">
+    <div class="flower">
+      <div class="flower_name"></div>
+      <div class="flower_img"></div>
+      <div class="flower_price"></div>
+      <div class="flower_button"></div>
+    </div>
+    <div class="flower">
+      <div class="flower_name"></div>
+      <div class="flower_img"></div>
+      <div class="flower_price"></div>
+      <div class="flower_button"></div>
+    </div>
+    <div class="flower">
+      <div class="flower_name"></div>
+      <div class="flower_img"></div>
+      <div class="flower_price"></div>
+      <div class="flower_button"></div>
+    </div>
+    <div class="flower">
+      <div class="flower_name"></div>
+      <div class="flower_img"></div>
+      <div class="flower_price"></div>
+      <div class="flower_button"></div>
+    </div>
+    <div class="flower">
+      <div class="flower_name"></div>
+      <div class="flower_img"></div>
+      <div class="flower_price"></div>
+      <div class="flower_button"></div>
+    </div>
+    <div class="flower">
+      <div class="flower_name"></div>
+      <div class="flower_img"></div>
+      <div class="flower_price"></div>
+      <div class="flower_button"></div>
+    </div>
+    <div class="flower">
+      <div class="flower_name"></div>
+      <div class="flower_img"></div>
+      <div class="flower_price"></div>
+      <div class="flower_button"></div>
+    </div>
+    <div class="flower">
+      <div class="flower_name"></div>
+      <div class="flower_img"></div>
+      <div class="flower_price"></div>
+      <div class="flower_button"></div>
+    </div>
+    <div class="flower">
+      <div class="flower_name"></div>
+      <div class="flower_img"></div>
+      <div class="flower_price"></div>
+      <div class="flower_button"></div>
+    </div>
+    <div class="flower">
+      <div class="flower_name"></div>
+      <div class="flower_img"></div>
+      <div class="flower_price"></div>
+      <div class="flower_button"></div>
+    </div>
+  </div>
 
-    .main_nav {
-      display: none;
-    }
+  <section class="application-section center" id="applicationsection">
+    <div class="push50 hidden-lg"></div>
+    <div class="container">
+      <div class="text-center">
+        <div class="title-h1">
+          <img class="img-section" src="./images/logo_1.png" alt="flower-icon">
+          <div class="push20"></div>
+          <span>Выберите свой букет</span>
+        </div>
+      </div>
+      <div class="push20"></div>
 
-    @media (max-width: 767px) {
-      .main_nav {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        list-style-type: none;
-      }
-
-      .header__nav,
-      .top-menu {
-        display: block;
-        position: absolute;
-        top: 55px;
-        left: 0;
-        background: rgb(245, 246, 246);
-        box-shadow: #ccc;
-        width: 100%;
-        box-shadow: 0 4px 2px -2px rgba(36, 36, 36, 0.37);
-        transition: all 0.4s ease;
-        left: -100%;
-      }
-
-      .header__nav.open-menu {
-        left: 0;
-        height: 100vh;
-        /* position: fixed; */
-        top: 100%;
-      }
+      <!-- Filter Controls - Simple Mode -->
+      <div id="catalog">
+        <ul class="simplefilter text-center-md">
+          <li class="filter active" data-filter="all">Все</li>
+          <li class="filter" data-filter=".category1">Красные розы</li>
+          <li class="filter" data-filter=".category2">Белые розы</li>
+          <li class="filter" data-filter=".category3">Тюльпаны</li>
+          <li class="filter" data-filter=".category4">Свадебные букеты</li>
+          <li class="filter" data-filter=".category5">Корзины цветов</li>
+        </ul>
 
 
-    }
-  </style>
+
+        <div class="push30"></div>
+        <div class="application-inner lightgallery">
+          <div class="row">
+            <div class="filtr-container">
+              <div class="col-sm-6 col-md-4 col-lg-3 mix category1 category4" style="display: inline-block;"
+                data-bound="">
+                <div class="element">
+                  <div class="element-inner">
+                    <div class="img-wrapper text-center relative">
+                      <img src="images/gallery/11r.png" alt="product1">
+                    </div>
+                    <div class="element-content">
+                      <div class="title">
+                        <div class="table">
+                          <div class="table-cell">
+                            Букет из 11 красных роз
+                          </div>
+                        </div>
+                      </div>
+                      <div class="push10"></div>
+                      <span class="old-price strike">2500 руб.</span> <span class="price bold f26 green">1 250
+                        руб.</span>
+                      <div class="push10"></div>
+                      <a href="#application" class="button min fancyboxModal"
+                        data-theme="Букет из 11 красных роз">Заказать</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="clear-hr">
+              <div class="col-sm-6 col-md-4 col-lg-3 mix category1" style="display: inline-block;" data-bound="">
+                <div class="element">
+                  <div class="element-inner">
+                    <div class="img-wrapper text-center relative">
+                      <img src="images/gallery/21r.png" alt="product1">
+                    </div>
+                    <div class="element-content">
+                      <div class="title">
+                        <div class="table">
+                          <div class="table-cell">
+                            Букет из 21 красной розы
+                          </div>
+                        </div>
+                      </div>
+                      <div class="push10"></div>
+                      <span class="old-price strike">3500 руб.</span> <span class="price bold f26 green">2 250
+                        руб.</span>
+                      <div class="push10"></div>
+                      <a href="#application" class="button min fancyboxModal"
+                        data-theme="Букет из 21 красной розы">Заказать</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="clear-hr">
+              <div class="col-sm-6 col-md-4 col-lg-3 mix category1" style="display: inline-block;" data-bound="">
+                <div class="element">
+                  <div class="element-inner">
+                    <div class="img-wrapper text-center relative">
+                      <img src="images/gallery/51r.png" alt="product1">
+                    </div>
+                    <div class="element-content">
+                      <div class="title">
+                        <div class="table">
+                          <div class="table-cell">
+                            Букет из 51 красной розы
+                          </div>
+                        </div>
+                      </div>
+                      <div class="push10"></div>
+                      <span class="price bold f26 green">5 000 руб.</span>
+                      <div class="push10"></div>
+                      <a href="#application" class="button min fancyboxModal"
+                        data-theme="Букет из 51 красной розы">Заказать</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="clear-hr">
+              <div class="col-sm-6 col-md-4 col-lg-3 mix category1" style="display: inline-block;" data-bound="">
+                <div class="element">
+                  <div class="element-inner">
+                    <div class="img-wrapper text-center relative">
+                      <img src="images/gallery/101r.png" alt="product1">
+                    </div>
+                    <div class="element-content">
+                      <div class="title">
+                        <div class="table">
+                          <div class="table-cell">
+                            Букет из 101 красной розы
+                          </div>
+                        </div>
+                      </div>
+                      <div class="push10"></div>
+                      <span class="old-price strike">9500 руб.</span> <span class="price bold f26 green">8 250
+                        руб.</span>
+                      <div class="push10"></div>
+                      <a href="#application" class="button min fancyboxModal"
+                        data-theme="Букет из 101 красной розы">Заказать</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="clear-hr">
+              <div class="col-sm-6 col-md-4 col-lg-3 mix category2 category4" style="display: inline-block;"
+                data-bound="">
+                <div class="element">
+                  <div class="element-inner">
+                    <div class="img-wrapper text-center relative">
+                      <img src="images/gallery/11w.png" alt="product1">
+                    </div>
+                    <div class="element-content">
+                      <div class="title">
+                        <div class="table">
+                          <div class="table-cell">
+                            Букет из 11 белых роз
+                          </div>
+                        </div>
+                      </div>
+                      <div class="push10"></div>
+                      <span class="old-price strike">2 300 руб.</span> <span class="price bold f26 green">1 300
+                        руб.</span>
+                      <div class="push10"></div>
+                      <a href="#application" class="button min fancyboxModal"
+                        data-theme="Букет из 11 белых роз">Заказать</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="clear-hr">
+              <div class="col-sm-6 col-md-4 col-lg-3 mix category2" style="display: inline-block;" data-bound="">
+                <div class="element">
+                  <div class="element-inner">
+                    <div class="img-wrapper text-center relative">
+                      <img src="images/gallery/21w.png" alt="product1">
+                    </div>
+                    <div class="element-content">
+                      <div class="title">
+                        <div class="table">
+                          <div class="table-cell">
+                            Букет из 21 белой розы
+                          </div>
+                        </div>
+                      </div>
+                      <div class="push10"></div>
+                      <span class="old-price strike">3 300 руб.</span> <span class="price bold f26 green">2 300
+                        руб.</span>
+                      <div class="push10"></div>
+                      <a href="#application" class="button min fancyboxModal"
+                        data-theme="Букет из 21 белой розы">Заказать</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="clear-hr">
+              <div class="col-sm-6 col-md-4 col-lg-3 mix category2" style="display: inline-block;" data-bound="">
+                <div class="element">
+                  <div class="element-inner">
+                    <div class="img-wrapper text-center relative">
+                      <img src="images/gallery/51w.png" alt="product1">
+                    </div>
+                    <div class="element-content">
+                      <div class="title">
+                        <div class="table">
+                          <div class="table-cell">
+                            Букет из 51 белой розы
+                          </div>
+                        </div>
+                      </div>
+                      <div class="push10"></div>
+                      <span class="old-price strike">6 300 руб.</span> <span class="price bold f26 green">4 300
+                        руб.</span>
+                      <div class="push10"></div>
+                      <a href="#application" class="button min fancyboxModal"
+                        data-theme="Букет из 51 белой розы">Заказать</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="clear-hr">
+              <div class="col-sm-6 col-md-4 col-lg-3 mix category2" style="display: inline-block;" data-bound="">
+                <div class="element">
+                  <div class="element-inner">
+                    <div class="img-wrapper text-center relative">
+                      <img src="images/gallery/101w.png" alt="product1">
+                    </div>
+                    <div class="element-content">
+                      <div class="title">
+                        <div class="table">
+                          <div class="table-cell">
+                            Букет из 101 белой розы
+                          </div>
+                        </div>
+                      </div>
+                      <div class="push10"></div>
+                      <span class="old-price strike">19 300 руб.</span> <span class="price bold f26 green">16 300
+                        руб.</span>
+                      <div class="push10"></div>
+                      <a href="#application" class="button min fancyboxModal"
+                        data-theme="Букет из 101 белой розы">Заказать</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="clear-hr">
+
+
+
+              <div class="col-sm-6 col-md-4 col-lg-3 mix category3" style="display: inline-block;" data-bound="">
+                <div class="element">
+                  <div class="element-inner">
+                    <div class="img-wrapper text-center relative">
+                      <a href="images/gallery/tulpan1.jpg" class="lightgallery-link absolute"
+                        data-sub-html="Букет тюльпанов #1011"></a>
+                      <img src="images/gallery/tulpan1-thumb.png" alt="product1">
+                    </div>
+                    <div class="element-content">
+                      <div class="title">
+                        <div class="table">
+                          <div class="table-cell">
+                            Букет тюльпанов #1011
+                          </div>
+                        </div>
+                      </div>
+                      <div class="push10"></div>
+                      <span class="old-price strike">1 300 руб.</span> <span class="price bold f26 green">800
+                        руб.</span>
+                      <div class="push10"></div>
+                      <a href="#application" class="button min fancyboxModal"
+                        data-theme="Букет тюльпанов #1011">Заказать</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="clear-hr">
+
+              <div class="col-sm-6 col-md-4 col-lg-3 mix category3" style="display: inline-block;" data-bound="">
+                <div class="element">
+                  <div class="element-inner">
+                    <div class="img-wrapper text-center relative">
+                      <a href="images/gallery/tulpan2.jpg" class="lightgallery-link absolute"
+                        data-sub-html="Букет тюльпанов #1022"></a>
+                      <img src="images/gallery/tulpan2-thumb.png" alt="product1">
+                    </div>
+                    <div class="element-content">
+                      <div class="title">
+                        <div class="table">
+                          <div class="table-cell">
+                            Букет тюльпанов #1022
+                          </div>
+                        </div>
+                      </div>
+                      <div class="push10"></div>
+                      <span class="old-price strike">1 000 руб.</span> <span class="price bold f26 green">700
+                        руб.</span>
+                      <div class="push10"></div>
+                      <a href="#application" class="button min fancyboxModal"
+                        data-theme="Букет тюльпанов #1022">Заказать</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="clear-hr">
+
+              <div class="col-sm-6 col-md-4 col-lg-3 mix category3 category5" style="display: inline-block;"
+                data-bound="">
+                <div class="element">
+                  <div class="element-inner">
+                    <div class="img-wrapper text-center relative">
+                      <a href="images/gallery/tulpan3.jpg" class="lightgallery-link absolute"
+                        data-sub-html="Корзина тюльпанов #2011"></a>
+                      <img src="images/gallery/tulpan3-thumb.png" alt="product1">
+                    </div>
+                    <div class="element-content">
+                      <div class="title">
+                        <div class="table">
+                          <div class="table-cell">
+                            Корзина тюльпанов #2011
+                          </div>
+                        </div>
+                      </div>
+                      <div class="push10"></div>
+                      <span class="old-price strike">2 700 руб.</span> <span class="price bold f26 green">1700
+                        руб.</span>
+                      <div class="push10"></div>
+                      <a href="#application" class="button min fancyboxModal"
+                        data-theme="Корзина тюльпанов #2011">Заказать</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="clear-hr">
+
+              <div class="col-sm-6 col-md-4 col-lg-3 mix category3" style="display: inline-block;" data-bound="">
+                <div class="element">
+                  <div class="element-inner">
+                    <div class="img-wrapper text-center relative">
+                      <a href="images/gallery/tulpan4.jpg" class="lightgallery-link absolute"
+                        data-sub-html="Букет «Вдохновение»"></a>
+                      <img src="images/gallery/tulpan4-thumb.jpg" alt="product1">
+                    </div>
+                    <div class="element-content">
+                      <div class="title">
+                        <div class="table">
+                          <div class="table-cell">
+                            Букет «Вдохновение»
+                          </div>
+                        </div>
+                      </div>
+                      <div class="push10"></div>
+                      <span class="old-price strike">1 700 руб.</span> <span class="price bold f26 green">1500
+                        руб.</span>
+                      <div class="push10"></div>
+                      <a href="#application" class="button min fancyboxModal"
+                        data-theme="Букет «Вдохновение»">Заказать</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="clear-hr">
+
+              <div class="col-sm-6 col-md-4 col-lg-3 mix category4" style="display: inline-block;" data-bound="">
+                <div class="element">
+                  <div class="element-inner">
+                    <div class="img-wrapper text-center relative">
+                      <a href="images/gallery/wedd1.jpg" class="lightgallery-link absolute"
+                        data-sub-html="Свадебный букет #3311"></a>
+                      <img src="images/gallery/wedd1-thumb.jpg" alt="product1">
+                    </div>
+                    <div class="element-content">
+                      <div class="title">
+                        <div class="table">
+                          <div class="table-cell">
+                            Свадебный букет #3311
+                          </div>
+                        </div>
+                      </div>
+                      <div class="push10"></div>
+                      <span class="old-price strike">3 700 руб.</span> <span class="price bold f26 green">2500
+                        руб.</span>
+                      <div class="push10"></div>
+                      <a href="#application" class="button min fancyboxModal"
+                        data-theme="Свадебный букет #3311">Заказать</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="clear-hr">
+
+              <div class="col-sm-6 col-md-4 col-lg-3 mix category4" style="display: inline-block;" data-bound="">
+                <div class="element">
+                  <div class="element-inner">
+                    <div class="img-wrapper text-center relative">
+                      <a href="images/gallery/wedd2.jpg" class="lightgallery-link absolute"
+                        data-sub-html="Свадебный букет #3322"></a>
+                      <img src="images/gallery/wedd2-thumb.jpg" alt="product1">
+                    </div>
+                    <div class="element-content">
+                      <div class="title">
+                        <div class="table">
+                          <div class="table-cell">
+                            Свадебный букет #3322
+                          </div>
+                        </div>
+                      </div>
+                      <div class="push10"></div>
+                      <span class="old-price strike">3 700 руб.</span> <span class="price bold f26 green">2500
+                        руб.</span>
+                      <div class="push10"></div>
+                      <a href="#application" class="button min fancyboxModal"
+                        data-theme="Свадебный букет #3322">Заказать</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="clear-hr">
+
+              <div class="col-sm-6 col-md-4 col-lg-3 mix category4" style="display: inline-block;" data-bound="">
+                <div class="element">
+                  <div class="element-inner">
+                    <div class="img-wrapper text-center relative">
+                      <a href="images/gallery/wedd3.jpg" class="lightgallery-link absolute"
+                        data-sub-html="Свадебный букет #3323"></a>
+                      <img src="images/gallery/wedd3-thumb.jpg" alt="product1">
+                    </div>
+                    <div class="element-content">
+                      <div class="title">
+                        <div class="table">
+                          <div class="table-cell">
+                            Свадебный букет #3323
+                          </div>
+                        </div>
+                      </div>
+                      <div class="push10"></div>
+                      <span class="old-price strike">3 700 руб.</span> <span class="price bold f26 green">2500
+                        руб.</span>
+                      <div class="push10"></div>
+                      <a href="#application" class="button min fancyboxModal"
+                        data-theme="Свадебный букет #3323">Заказать</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="clear-hr">
+
+              <div class="col-sm-6 col-md-4 col-lg-3 mix category4" style="display: inline-block;" data-bound="">
+                <div class="element">
+                  <div class="element-inner">
+                    <div class="img-wrapper text-center relative">
+                      <a href="images/gallery/wedd4.jpg" class="lightgallery-link absolute"
+                        data-sub-html="Свадебный букет #3343"></a>
+                      <img src="images/gallery/wedd4-thumb.jpg" alt="product1">
+                    </div>
+                    <div class="element-content">
+                      <div class="title">
+                        <div class="table">
+                          <div class="table-cell">
+                            Свадебный букет #3343
+                          </div>
+                        </div>
+                      </div>
+                      <div class="push10"></div>
+                      <span class="old-price strike">2 700 руб.</span> <span class="price bold f26 green">1500
+                        руб.</span>
+                      <div class="push10"></div>
+                      <a href="#application" class="button min fancyboxModal"
+                        data-theme="Свадебный букет #3343">Заказать</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="clear-hr">
+
+              <div class="col-sm-6 col-md-4 col-lg-3 mix category5" style="display: inline-block;" data-bound="">
+                <div class="element">
+                  <div class="element-inner">
+                    <div class="img-wrapper text-center relative">
+                      <a href="images/gallery/cart1.jpg" class="lightgallery-link absolute"
+                        data-sub-html="Корзина цветов #2243"></a>
+                      <img src="images/gallery/cart1-thumb.jpg" alt="Корзина цветов #2243">
+                    </div>
+                    <div class="element-content">
+                      <div class="title">
+                        <div class="table">
+                          <div class="table-cell">
+                            Корзина цветов #2243
+                          </div>
+                        </div>
+                      </div>
+                      <div class="push10"></div>
+                      <span class="old-price strike">4 700 руб.</span> <span class="price bold f26 green">3500
+                        руб.</span>
+                      <div class="push10"></div>
+                      <a href="#application" class="button min fancyboxModal"
+                        data-theme="Корзина цветов #2243">Заказать</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="clear-hr">
+
+              <div class="col-sm-6 col-md-4 col-lg-3 mix category5" style="display: inline-block;" data-bound="">
+                <div class="element">
+                  <div class="element-inner">
+                    <div class="img-wrapper text-center relative">
+                      <a href="images/gallery/cart2.jpg" class="lightgallery-link absolute"
+                        data-sub-html="Корзина цветов #5243"></a>
+                      <img src="images/gallery/cart2-thumb.jpg" alt="Корзина цветов #5243">
+                    </div>
+                    <div class="element-content">
+                      <div class="title">
+                        <div class="table">
+                          <div class="table-cell">
+                            Корзина цветов #5243
+                          </div>
+                        </div>
+                      </div>
+                      <div class="push10"></div>
+                      <span class="old-price strike">4 700 руб.</span> <span class="price bold f26 green">4500
+                        руб.</span>
+                      <div class="push10"></div>
+                      <a href="#application" class="button min fancyboxModal"
+                        data-theme="Корзина цветов #5243">Заказать</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="clear-hr">
+
+              <div class="col-sm-6 col-md-4 col-lg-3 mix category5" style="display: inline-block;" data-bound="">
+                <div class="element">
+                  <div class="element-inner">
+                    <div class="img-wrapper text-center relative">
+                      <a href="images/gallery/cart3.jpg" class="lightgallery-link absolute"
+                        data-sub-html="Корзина цветов #5263"></a>
+                      <img src="images/gallery/cart3-thumb.jpg" alt="Корзина цветов #5263">
+                    </div>
+                    <div class="element-content">
+                      <div class="title">
+                        <div class="table">
+                          <div class="table-cell">
+                            Корзина цветов #5263
+                          </div>
+                        </div>
+                      </div>
+                      <div class="push10"></div>
+                      <span class="old-price strike">1 700 руб.</span> <span class="price bold f26 green">1400
+                        руб.</span>
+                      <div class="push10"></div>
+                      <a href="#application" class="button min fancyboxModal"
+                        data-theme="Корзина цветов #5263">Заказать</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="clear-hr">
+
+              <div class="col-sm-6 col-md-4 col-lg-3 mix category1 category5" style="display: inline-block;"
+                data-bound="">
+                <div class="element">
+                  <div class="element-inner">
+                    <div class="img-wrapper text-center relative">
+                      <a href="images/gallery/cart4.jpg" class="lightgallery-link absolute"
+                        data-sub-html="Сердце из роз"></a>
+                      <img src="images/gallery/cart4-thumb.jpg" alt="Сердце из роз">
+                    </div>
+                    <div class="element-content">
+                      <div class="title">
+                        <div class="table">
+                          <div class="table-cell">
+                            Сердце из роз
+                          </div>
+                        </div>
+                      </div>
+                      <div class="push10"></div>
+                      <span class="old-price strike">3 900 руб.</span> <span class="price bold f26 green">3400
+                        руб.</span>
+                      <div class="push10"></div>
+                      <a href="#application" class="button min fancyboxModal" data-theme="Сердце из роз">Заказать</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="clear-hr">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="push70 hidden-xs hidden-lg"></div>
+    <div class="push20 visible-lg"></div>
+  </section>
+
 
 
   <!-- * * * * * * Header: end * * * * * * -->

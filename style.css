@@ -32,6 +32,7 @@ body {
   overflow-x: hidden;
   font-family: "Cuprum", sans-serif;
 }
+
 .center {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
@@ -43,7 +44,7 @@ body {
   top: 0;
   width: 100%;
   background: #f6fff0;
-  line-height: 1.4;
+  /* line-height: 1.4; */
 }
 .fa-location-dot,
 .fa-clock,
@@ -80,11 +81,18 @@ body {
   justify-content: space-around;
 }
 .header-menu {
+  width: 100%;
+  height: 80px;
+  /* background: #fff;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1); */
   display: flex;
-  justify-content: space-around;
-  display: flex;
+  padding: 5px 0;
   align-items: center;
   justify-content: space-between;
+}
+
+.main-nav {
+  display: none;
 }
 .header-logo {
   height: 80px;
@@ -124,27 +132,27 @@ a {
   text-decoration: none;
 }
 
-.container {
+/* .container {
   margin-right: auto;
   margin-left: auto;
   padding-left: 10px;
   padding-right: 10px;
-}
+} */
 
-.mySlides {
+/* .mySlides {
   display: none;
-}
+} */
 
-img {
+/* img {
   vertical-align: middle;
-}
+} */
 
 /* Slideshow container */
-.slideshow-container {
-  /* max-width: 1000px; */
+/* .slideshow-container {
+  max-width: 1000px;
   position: relative;
   margin: auto;
-}
+} */
 
 /* Next & previous buttons */
 .prev,
@@ -163,7 +171,7 @@ img {
   border-radius: 0 3px 3px 0;
 }
 .prev {
-  left: 0%;
+  left: 0;
 }
 
 /* Position the "next button" to the right */
@@ -304,6 +312,57 @@ img {
   transform: translate(-50%, -63%);
 }
 
+.title-h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: "Nautilus Pompilius";
+  font-size: 48px;
+  line-height: 1.3;
+  margin-bottom: 20px;
+  color: #6a9b0a;
+}
+.img-section {
+  width: 111px;
+}
+.text-center {
+  display: flex;
+  justify-content: space-around;
+}
+.filtr-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-columns: repeat(4, 285px); */
+  gap: 20px;
+}
+.clear-hr {
+  display: none;
+}
+.simplefilter {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.flower {
+  border: 1px solid black;
+  width: 150px;
+  height: 200px;
+}
+.flower_name {
+}
+.flower_img {
+}
+.flower_price {
+}
+.flower_button {
+}
+
 @media (max-width: 767px) {
   .top-menu-mobil {
     background-color: transparent;
@@ -387,6 +446,33 @@ img {
   }
   .fixed-page {
     overflow: hidden;
+  }
+  .main-nav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    list-style-type: none;
+  }
+
+  .header-nav,
+  .top-menu {
+    display: block;
+    position: absolute;
+    top: 55px;
+    /* background: rgb(245, 246, 246); */
+    background: #f6fff0;
+    box-shadow: #ccc;
+    width: 100%;
+    /* box-shadow: 0 4px 2px -2px rgba(36, 36, 36, 0.37); */
+    transition: all 0.4s ease-in-out;
+    left: -1000%;
+  }
+
+  .header-nav.open-menu {
+    left: 0;
+    height: 100vh;
+    /* position: fixed; */
+    top: 100%;
   }
 }
 @media (max-width: 485px) {
